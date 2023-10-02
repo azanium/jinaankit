@@ -1,0 +1,77 @@
+# Binaries for programs and plugins
+*.exe
+*.dll
+*.so
+*.dylib
+gosimple
+tmp/
+static/
+
+# Test binary, build with `go test -c`
+*.test
+
+# Output of the go coverage tool, specifically when used with LiteIDE
+*.out
+
+# Editor settings
+.glide/
+.idea/
+.vscode/
+
+# Merge conflict file
+*.orig
+
+# Mac OS
+.DS_Store
+
+*.swp
+node_modules
+dist
+distServer
+
+# environment config file
+.env
+
+# build related file
+.babelCache
+.happypack
+webpack-stats.json
+package-lock.json
+webpack-assets.json
+
+scripts/perf/logs
+scripts/perf/errors
+
+*.report.json
+*.report.html
+*.log
+
+*.PID
+
+!scripts/logs/
+!.gitkeep
+
+bin/
+.docker/
+
+# Go dep
+vendor/
+
+# sonarqube sonar-scanner
+**/.scannerwork/
+**/sonar-project.properties
+
+# template folder
+_test
+
+# Local Development data
+domain/bmstrx/main
+domain/bmspartner/main
+
+# Local .terraform directories
+**/.terraform/*
+.terraform.lock.hcl
+
+# Local binary build from vscode
+__debug_bin
+out/
