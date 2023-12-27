@@ -95,3 +95,15 @@ func (s *S3) UploadLargeFile(bucket, key string, body io.Reader) (*manager.Uploa
 	})
 	return result, err
 }
+
+func (s *S3) DeleteFile(bucket, key string) error {
+	obj, err := s.client.DeleteObject(context.TODO(), &s3.DeleteObjectInput{
+		Bucket: aws.String(bucket),
+		Key:    aws.String(key),
+	})
+	if err != nil {
+		return fmt.Errorf("failed to delete file %v", err)
+	}
+	fmt.Printf("# s3 file deleted %v\n", obj)
+	return nil
+}
