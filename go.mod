@@ -1,4 +1,4 @@
-module github.com/azanium/jinaankit
+module github.com/godp/jinaankit
 
 go 1.21.1
 
